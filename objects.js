@@ -10,4 +10,54 @@ const books = [
 ];
 
 let newBooks = books.filter((bks)=> {return bks.Type =='Spiritual'});
-console.log(newBooks);
+// console.log(newBooks);
+
+const number = [1,2,3,4,5,6,7,8,9,10];
+// add 10 in all number in the array
+
+const newNum = number.map((num)=> num+10);
+// console.log((newNum));
+
+// reduce function in javaScript
+
+const arr=[1,2,3,4,5,6];
+
+// basic function 
+
+const addtion = arr.reduce(function(acc, currVal){
+    return acc+currVal;
+},0);
+
+//  console.log(addtion);
+
+const sum = arr.reduce((acc, currVal)=> acc+currVal,0)
+
+// console.log(sum);
+
+//reduce method in objects
+
+const courses = [
+    {
+        subject:"js Series",
+        price:999
+    },
+    {
+        subject:"C++ Series",
+        price:4999
+    },
+    {
+        subject:"AI/ML Series",
+        price:22990
+    },
+    {
+        subject:"Block Chain Series",
+        price:5599
+    }
+];
+
+const totalPayablePrice = courses.reduce((acc, item) => acc + item.price,0);
+console.log(totalPayablePrice);
+
+
+
+
